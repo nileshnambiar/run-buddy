@@ -117,3 +117,31 @@ section {
   }
 /* Hero Style End */
 
+/* What We Do - Style Start */
+
+.intro{
+    text-align: center;
+}
+
+.intro h2{
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid  #fce138;
+    /*this reduces the size of the bottom-border adequately*/
+    display: inline-block;
+}
+
+.intro p{
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    /* alternative to margin style used below */
+    /* display: inline-block; */
+   
+    /*the below style works only to horizontaly center element not vertically center it*/
+    margin: 0 auto;
+}
+
