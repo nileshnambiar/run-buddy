@@ -118,20 +118,21 @@ section {
 /* Hero Style End */
 
 /* What We Do - Style Start */
-
 .intro{
     text-align: center;
 }
 
+/* this has been replaced with "CSS rules for section headings" below
 .intro h2{
     font-size: 55px;
     color: #024e76;
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
     border-bottom: 3px solid  #fce138;
-    /*this reduces the size of the bottom-border adequately*/
+    /*this reduces the size of the bottom-border adequately
     display: inline-block;
-}
+}*/
+
 
 .intro p{
     line-height: 1.7;
@@ -144,4 +145,64 @@ section {
     /*the below style works only to horizontaly center element not vertically center it*/
     margin: 0 auto;
 }
+/* What We Do - Style End */
 
+/*What You Do - Style Start */
+
+.steps {
+    text-align: center;
+    background: #fce138;
+}
+
+.steps div {
+    margin-bottom: 80px;
+}
+
+.steps img {
+    width: 15%;
+    margin: 10px 0;
+}
+
+.steps h3 {
+    color:#024e76;
+    font-size: 46px;
+    margin-top: 10px
+}
+
+.steps p {
+    color: #39a6b2;
+    font-size: 23px;
+}
+
+.steps span {
+    font-size: 38px;
+}
+
+/*
+.steps h2{
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid #39a6b2;
+    display: inline-block;
+}
+*/
+
+/* CSS rules for section headings */
+.section-title{
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid;
+    display: inline-block;
+}
+
+.primary-border{
+    border-color: #fce138;
+}
+
+.secondary-border{
+    border-color: #39a6b2
+}
