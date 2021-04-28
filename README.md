@@ -12,3 +12,5 @@ https://nileshnambiar.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Nilesh Nambiar
+
+### &copy;2019 Run Buddy, Inc
