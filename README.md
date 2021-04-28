@@ -8,3 +8,7 @@ A website that offers fitness training services.
 * CSS
 
 ## Website
+https://nileshnambiar.github.io/run-buddy/
+
+## Contribution
+Made with ❤️ by Nilesh Nambiar
