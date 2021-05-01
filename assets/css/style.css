@@ -10,14 +10,6 @@ body {
     font-family: Helvetica, Arial, sans-serif;
   }
 
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
 /* apply styles to <header> */
 header {
     display: flex;
@@ -153,9 +145,9 @@ section {
 /* Hero Style End */
 
 /* What We Do - Style Start */
-.intro{
+/*.intro{
     text-align: center;
-}
+}*/
 
 /* this has been replaced with "CSS rules for section headings" below
 .intro h2{
@@ -179,13 +171,14 @@ section {
    
     /*the below style works only to horizontaly center element not vertically center it*/
     margin: 0 auto;
+    text-align: center;
 }
 /* What We Do - Style End */
 
 /*What You Do - Style Start */
 
 .steps {
-    text-align: center;
+    /*text-align: center;*/
     background: #fce138;
 }
 
@@ -228,10 +221,14 @@ section {
 .section-title{
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
+    /*margin-bottom: 35px;*/
+    /*padding: 0 100px 20px 100px;*/
     border-bottom: 3px solid;
-    display: inline-block;
+    /*display: inline-block;*/
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
 
 .primary-border{
@@ -246,7 +243,7 @@ section {
 /* Styles for Meet the Trainers Section - Start */
 
 .trainers {
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .trainer {
@@ -288,7 +285,7 @@ section {
 /* Reach Out Section Style begins */
 
 .contact{
-    text-align: center;
+    /*text-align: center;*/
     background-color:#024e76;
 }
 
@@ -324,4 +321,16 @@ section {
 
 .contact-info a {
     color: #fce138;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.flex-row {
+    display: flex;
 }
