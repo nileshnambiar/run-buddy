@@ -1,16 +1,17 @@
+/* Overall styles applicable for the whole web-page. */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* styles for the body of the web-page*/
 body {
-    /* more on this crazy alphanumerical value in a minute! */
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
   }
 
-/* apply styles to <header> */
+/* styles for Header Element and its components */
 header {
     display: flex;
     justify-content: space-between;
@@ -49,46 +50,22 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-}
-
-footer h2 {
-    color: #024e76;
-    font-size: 30px;
-    margin: 0
-}
-
-footer div {
-    line-height: 1.5;
-    text-align: right;   
-}
-
-footer a {
-    color: #024e76
-}
-
+/* styles to all the section elements */
 section {
     padding: 60px
 }
 
-/* Hero Style Start */
+/* styles for Class = hero */
 .hero {
     background-image: url("../images/hero-bg.jpeg");
-    /*height: 600px;*/ 
     background-size: cover;
     background-position: center;
-    /*position: relative*/;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+/*styles for the Class = hero-cta within hero */
 .hero-cta {
     width: 35%;
     text-align: right;
@@ -104,18 +81,16 @@ section {
     color: #fce138;
 }
 
+/*styles for class=hero-form within hero */
 .hero-form {
     color: #024e76;
     background-color: #fce138;
     padding: 20px;
     width: 40%;
     margin: 3.5%;
-    /*width: 500px;*/
     border: solid 3px #024e76;
-    /*position: absolute;*/
-    /*bottom: 120px;*/
-    /*right: 140px;*/
 }
+
 .hero-form h3 {
     font-size: 24px;
     margin: 0px;
@@ -123,6 +98,19 @@ section {
 .hero-form p {
     margin: 5px 0px 15px 0px;
 }
+
+.hero-form label {
+    margin: 5px;
+}
+
+.hero-form button {
+    color: #fce138;
+    background-color: #024e76;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
 .form-input {
     border: 1px solid #024e76;
     display: block;
@@ -132,99 +120,78 @@ section {
     width: 100%;
     margin-bottom: 15px;
 }
-.hero-form label {
-    margin: 5px;
-}
-.hero-form button {
-    color: #fce138;
-    background-color: #024e76;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-/* Hero Style End */
 
-/* What We Do - Style Start */
-/*.intro{
-    text-align: center;
-}*/
-
-/* this has been replaced with "CSS rules for section headings" below
-.intro h2{
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid  #fce138;
-    /*this reduces the size of the bottom-border adequately
-    display: inline-block;
-}*/
-
+/* styles for section-id = what-we-do */
 
 .intro p{
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
     font-size: 20px;
-    /* alternative to margin style used below */
-    /* display: inline-block; */
-   
-    /*the below style works only to horizontaly center element not vertically center it*/
     margin: 0 auto;
     text-align: center;
 }
-/* What We Do - Style End */
 
-/*What You Do - Style Start */
+/* styles for section-id = what-you-do */
 
 .steps {
-    /*text-align: center;*/
     background: #fce138;
 }
 
-.steps div {
-    margin-bottom: 80px;
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.steps img {
-    width: 15%;
-    margin: 10px 0;
-}
-
-.steps h3 {
+.step h3 {
     color:#024e76;
     font-size: 46px;
-    margin-top: 10px
+    margin-top: 10px;
+    flex: 1 30%
 }
 
-.steps p {
-    color: #39a6b2;
-    font-size: 23px;
+.step-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 2 70%;
 }
 
-.steps span {
-    font-size: 38px;
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
 }
 
-/*
-.steps h2{
-    font-size: 55px;
+.step-img img {
+    max-width: 100%;
+}
+
+.step-text {
+    flex: 12;
+}
+
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid #39a6b2;
-    display: inline-block;
 }
-*/
 
-/* CSS rules for section headings - Start */
+.step-text p {
+    color: #39a6b2;
+    font-size: 18px;
+}
+
+/* CSS rules for section headings */
 .section-title{
     font-size: 55px;
     color: #024e76;
-    /*margin-bottom: 35px;*/
-    /*padding: 0 100px 20px 100px;*/
     border-bottom: 3px solid;
-    /*display: inline-block;*/
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
@@ -238,20 +205,14 @@ section {
 .secondary-border{
     border-color: #39a6b2
 }
-/* CSS rules for section headings - End */
 
-/* Styles for Meet the Trainers Section - Start */
-
-.trainers {
-    /*text-align: center;*/
-}
+/* styles for section-id = your-trainers */
 
 .trainer {
     width: 900px;
     margin: 0 auto 30px auto;
     background: #024e76;
     color: #fce138;
-    /* the below line is required since we have floated all the elements inside this parent element */
     overflow: auto;
 }
 
@@ -285,7 +246,6 @@ section {
 /* Reach Out Section Style begins */
 
 .contact{
-    /*text-align: center;*/
     background-color:#024e76;
 }
 
@@ -322,6 +282,34 @@ section {
 .contact-info a {
     color: #fce138;
 }
+
+/* styles for footer section */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer h2 {
+    color: #024e76;
+    font-size: 30px;
+    margin: 0
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;   
+}
+
+footer a {
+    color: #024e76
+}
+
+/* Utility styles */ 
 
 .text-left {
     text-align: left;
